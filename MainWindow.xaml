@@ -1,0 +1,25 @@
+﻿<Window x:Class="DispactherTimePlan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DispactherTimePlan"
+        xmlns:views="clr-namespace:DispactherTimePlan.UserControls"
+        mc:Ignorable="d"
+        Title="Station Times" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock Name="textBlock" Text="Time" FontSize="19" TextWrapping="Wrap" />
+        <TabControl Name="tabControl">
+            <TabItem Header="Time" >
+                <views:dispactherTimeUser />
+            </TabItem>
+            <TabItem Header="Stops Time" >
+                <views:stopTimes />
+            </TabItem>
+            <TabItem Header="Stop Watch" >
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            
+        </TabControl>
+    </StackPanel>
+</Window>
