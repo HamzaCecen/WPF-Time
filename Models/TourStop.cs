@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +10,8 @@ namespace DispactherTimePlan.Models
     {
         public int StopNumber { get; set; }
         public string Name { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        public string ArriveTime { get; set; }
+        public string DepartureTime { get; set; }
         public string ImageUri { get; set; }
         public List<BusyTime> BusyTimes { get; set; }
 
