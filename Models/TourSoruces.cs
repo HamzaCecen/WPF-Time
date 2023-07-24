@@ -17,8 +17,8 @@ namespace DispactherTimePlan.Models
             {
                 StopNumber = 1,
                 Name = "Kadıköy",
-                Latitude = "11111",
-                Longitude = "-222222",
+                ArriveTime = "15:20",
+                DepartureTime = "15:23",
                 ImageUri = "/DispactherTimePlan;component/Images/kadıköy.jpg"
 
             });
@@ -27,8 +27,8 @@ namespace DispactherTimePlan.Models
             {
                 StopNumber = 2,
                 Name = "Bostancı",
-                Latitude = "33333333",
-                Longitude = "-444444444444",
+                ArriveTime = "16:00",
+                DepartureTime = "16:01",
                 ImageUri = "/DispactherTimePlan;component/Images/bostancı.jpg"
             });
 
@@ -40,6 +40,7 @@ namespace DispactherTimePlan.Models
             var result = _tourStops.ToList<TourStop>();
             return result;
         }
+        /*
         public static List<TourStop> GetTourStops(int count)
         {
             var result = _tourStops.Take(count).ToList<TourStop>();
@@ -52,5 +53,6 @@ namespace DispactherTimePlan.Models
                 return _tourStops;
             }
         }
+        */
     }
 }
