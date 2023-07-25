@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,8 +25,7 @@ namespace DispactherTimePlan.UserControls
     public partial class stopWatchView : UserControl
     {
         private DispatcherTimer dt;
-        //private DateTime displayTime;
-        private const string displaytime = "00:00:00";
+        //private const string displaytime = "00:00:00";
         private Stopwatch stopwatch;
         private Timer timer;
 
@@ -34,8 +33,14 @@ namespace DispactherTimePlan.UserControls
         {
             InitializeComponent();
 
+            //displayDate foo = new displayDate();
+            forStopWatch foo1 = new forStopWatch();
+            //string value = foo1.foo;
+            foo1.foo = "00:00:00";
+
+
             //display as 00:00
-            DisplayTime.Text = displaytime;
+            DisplayTime.Text = foo1.foo; //displaytime;
 
             //create new objects
             stopwatch = new Stopwatch();
@@ -79,9 +84,13 @@ namespace DispactherTimePlan.UserControls
 
         private void Clear_Click_1(object sender, RoutedEventArgs e)
         {
+            forStopWatch foo1 = new forStopWatch();
+            //string value = foo1.foo;
+            foo1.foo = "00:00:00";
+
             //Display(text) sıfırla
             stopwatch.Reset();
-            DisplayTime.Text = displaytime;
+            DisplayTime.Text = foo1.foo; //displaytime;
         }
     }
     
